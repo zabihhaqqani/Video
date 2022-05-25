@@ -3,8 +3,7 @@
 Fonts
 ===============
 */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 /*
 =============== 
 Variables
@@ -43,8 +42,10 @@ Variables
   --clr-green-dark: hsl(125, 67%, 44%);
   --clr-green-light: hsl(125, 71%, 66%);
   --clr-black: #222;
-  --ff-primary: "Roboto", sans-serif;
-  --ff-secondary: "Open Sans", sans-serif;
+  --ff-primary:'Poppins',
+  sans-serif;
+  --ff-secondary: 'Poppins',
+  sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
   --radius: 0.5rem;
@@ -150,6 +151,7 @@ p {
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius);
+
 }
 .btn:hover {
   color: var(--clr-white);
@@ -231,6 +233,7 @@ h1 {
   justify-content: space-around;
   border: none;
   transition: var(--transition);
+    font-family: var(--ff-secondary);
 }
 .switch-btn span {
   display: inline-block;
@@ -255,7 +258,7 @@ h1 {
   left: 50%;
 }
 /* header after */
-/* header::after {
+header::after {
   content: "";
   position: absolute;
   top: 0;
@@ -264,4 +267,4 @@ h1 {
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
   z-index: -1;
-} */
+}
